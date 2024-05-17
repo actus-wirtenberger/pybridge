@@ -4,17 +4,21 @@
     "outDir": "./dist/cjs",
     "strict": true,
     "sourceMap": true,
-    "declaration": false,
+    "declaration": true,
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "target": "es2018",
     "module": "CommonJS",
     "preserveSymlinks": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "typeRoots": [
+      "./types",
+      "./node_modules/@types"
+    ]
   },
   "reflection": true,
   "include": [
     "index.ts",
-    "src"
+    "src/**/*"
   ]
 }
